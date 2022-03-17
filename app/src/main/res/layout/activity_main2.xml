@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/selectText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Select Difficulty Level"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/guess1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Guess the number between 0 and 3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectText" />
+
+    <Button
+        android:id="@+id/difficultyMedium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="MEDIUM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guess1" />
+
+    <TextView
+        android:id="@+id/guess2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Guess the number between 0 and 5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/difficultyMedium" />
+
+    <Button
+        android:id="@+id/difficultyAdvanced"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ADVANCED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guess2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
