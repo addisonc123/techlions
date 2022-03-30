@@ -6,10 +6,26 @@
         <entry key="..\:/Users/addis/AndroidStudioProjects/techlions1/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/addis/AndroidStudioProjects/techlions1/app/src/main/res/layout/activity_main2.xml" value="0.2" />
         <entry key="..\:/Users/addis/AndroidStudioProjects/techlions1/app/src/main/res/layout/activity_main3.xml" value="0.4" />
+        <entry key="app/src/main/res/layout/activity_correct_guess.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_difficulty_level.xml" value="0.19630192502532928" />
+        <entry key="app/src/main/res/layout/activity_difficultylevel.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_guess_entry.xml" value="0.19630192502532928" />
+        <entry key="app/src/main/res/layout/activity_guessentry.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_homepage.xml" value="0.2576462765957447" />
+        <entry key="app/src/main/res/layout/activity_leaderboard.xml" value="0.21822916666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main3.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_winning_message.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_wrong_guess.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/correctguesspage.xml" value="0.19630192502532928" />
+        <entry key="app/src/main/res/layout/leaderboardpage.xml" value="0.34739583333333335" />
+        <entry key="app/src/main/res/layout/winningmessagepage.xml" value="0.19630192502532928" />
+        <entry key="app/src/main/res/layout/wrongguesspage.xml" value="0.19630192502532928" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

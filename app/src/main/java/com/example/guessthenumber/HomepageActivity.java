@@ -6,19 +6,26 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class HomepageActivity extends AppCompatActivity {
+
+    public static EditText username;
+    public static String usernameString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_homepage);
 
         Button b1=(Button)findViewById(R.id.buttonStart);
         b1.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent = new Intent(MainActivity.this,MainActivity2.class);
+                username = findViewById(R.id.username);
+                usernameString = username.getText().toString();
+                Intent myintent = new Intent(HomepageActivity.this, DifficultyLevelActivity.class);
                 startActivity(myintent);
 
             }
