@@ -17,13 +17,17 @@ public class WinningMessageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_winning_message);
 
         userScoreMsg = (TextView) findViewById(R.id.userScoreMsg);
-        userScoreMsg.setText(String.format("You have made %d right guesses", GuessEntryActivity.score));
+        if (GuessEntryActivity.score == 1) {
+            userScoreMsg.setText(String.format("You have made %d right guess", GuessEntryActivity.score));
+        } else {
+            userScoreMsg.setText(String.format("You have made %d right guesses", GuessEntryActivity.score));
+        }
 
         Button b1=(Button)findViewById(R.id.buttonNext2);
         b1.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent = new Intent(WinningMessageActivity.this, LeaderboardActivity.class);
+                Intent myintent = new Intent(WinningMessageActivity.this, GuessEntryActivity.class);
                 startActivity(myintent);
             }
         });

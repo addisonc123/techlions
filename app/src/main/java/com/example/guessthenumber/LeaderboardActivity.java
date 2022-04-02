@@ -26,8 +26,8 @@ public class LeaderboardActivity extends AppCompatActivity {
         savedScores.put(GuessEntryActivity.score, HomepageActivity.usernameString);
         Set<Map.Entry<Integer, String>> savedScoresSet = savedScores.entrySet();
         Map.Entry<Integer, String>[] savedScoresArray = savedScoresSet.toArray(new Map.Entry[savedScoresSet.size()]);
-        scoreString = String.format("%-30s\t%d", savedScoresArray[savedScoresArray.length-1].getValue(), savedScoresArray[savedScoresArray.length-1].getKey());
-        for (int i = savedScoresArray.length - 2; i >= 0; i--){
+        scoreString = String.format("%-30s\t%d", savedScoresArray[savedScoresArray.length - 1].getValue(), savedScoresArray[savedScoresArray.length - 1].getKey());
+        for (int i = savedScoresArray.length - 2; i >= 0; i--) {
             scoreString += String.format("\n%-30s\t%d", savedScoresArray[i].getValue(), savedScoresArray[i].getKey());
         }
 
@@ -37,22 +37,11 @@ public class LeaderboardActivity extends AppCompatActivity {
         finalScore = (TextView) findViewById(R.id.finalScore);
         finalScore.setText(String.format("Your final score is: %d", GuessEntryActivity.score));
 
-        Button b1=(Button)findViewById(R.id.buttonPlayAgain);
-        Button b2=(Button)findViewById(R.id.buttonQuit);
+        Button b1 = (Button) findViewById(R.id.buttonPlayAgain);
         b1.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-                Intent myintent2 = new Intent(LeaderboardActivity.this, DifficultyLevelActivity.class);
-                startActivity(myintent2);
-
-            }
-        });
-        b2.setOnClickListener(new View.OnClickListener() {
-
             public void onClick(View v) {
                 Intent myintent2 = new Intent(LeaderboardActivity.this, HomepageActivity.class);
                 startActivity(myintent2);
-
             }
         });
     }

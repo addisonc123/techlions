@@ -18,19 +18,18 @@ public class CorrectGuessActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent = new Intent(CorrectGuessActivity.this, GuessEntryActivity.class);
+                Intent myintent = new Intent(CorrectGuessActivity.this, WinningMessageActivity.class);
                 startActivity(myintent);
 
             }
         });
 
         Button b2=(Button)findViewById(R.id.buttonEndGame);
-        b1.setOnClickListener(new View.OnClickListener() {
+        b2.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent myintent = new Intent(CorrectGuessActivity.this, WinningMessageActivity.class);
+                Intent myintent = new Intent(CorrectGuessActivity.this, LeaderboardActivity.class);
                 startActivity(myintent);
-
             }
         });
     }

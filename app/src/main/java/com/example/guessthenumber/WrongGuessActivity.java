@@ -25,12 +25,10 @@ public class WrongGuessActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                if(GuessEntryActivity.score == 0){
+                if (GuessEntryActivity.score != 0 | GuessEntryActivity.score != 1 | GuessEntryActivity.score != 2
+                        | GuessEntryActivity.score != 3 | GuessEntryActivity.score != 4 | GuessEntryActivity.score != 5){
                     Intent myintent = new Intent(WrongGuessActivity.this, LeaderboardActivity.class);
                     startActivity(myintent);
-                } else {
-                    Intent myintent2 = new Intent(WrongGuessActivity.this, WinningMessageActivity.class);
-                    startActivity(myintent2);
                 }
             }
         });
