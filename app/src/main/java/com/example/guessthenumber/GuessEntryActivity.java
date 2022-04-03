@@ -38,8 +38,7 @@ public class GuessEntryActivity extends AppCompatActivity {
                     score += 1;
                     Intent myintent = new Intent(GuessEntryActivity.this, CorrectGuessActivity.class);
                     startActivity(myintent);
-                } else if (userEntry != appGuess){
-                    score = 0;
+                } else {
                     Intent myintent = new Intent(GuessEntryActivity.this, WrongGuessActivity.class);
                     startActivity(myintent);
                 }
@@ -47,3 +46,5 @@ public class GuessEntryActivity extends AppCompatActivity {
         });
     }
 }
+
+

@@ -36,6 +36,8 @@ public class LeaderboardActivity extends AppCompatActivity {
 
         finalScore = (TextView) findViewById(R.id.finalScore);
         finalScore.setText(String.format("%s's final score is %d", HomepageActivity.usernameString,GuessEntryActivity.score));
+        GuessEntryActivity.score = 0;
+
 
         Button b1 = (Button) findViewById(R.id.buttonPlayAgain);
         b1.setOnClickListener(new View.OnClickListener() {
@@ -46,3 +48,8 @@ public class LeaderboardActivity extends AppCompatActivity {
         });
     }
 }
+
+
+
+
+
