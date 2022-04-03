@@ -34,11 +34,12 @@ public class GuessEntryActivity extends AppCompatActivity {
                 userGuess = (EditText) findViewById(R.id.userGuess);
                 userGuessString = userGuess.getText().toString();
                 userEntry = new Integer(userGuessString).intValue();
-                if(userEntry == appGuess){
+                if (userEntry == appGuess){
                     score += 1;
                     Intent myintent = new Intent(GuessEntryActivity.this, CorrectGuessActivity.class);
                     startActivity(myintent);
-                } else {
+                } else if (userEntry != appGuess){
+                    score = 0;
                     Intent myintent = new Intent(GuessEntryActivity.this, WrongGuessActivity.class);
                     startActivity(myintent);
                 }
